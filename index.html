@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>RoboStock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="icon">
+                <img src="images/icon.png">
+                <h2>RoboStock</h2>
+            </div>
+                <nav>
+                    <ul id="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="connect.html">Connect</a></li>
+                        <li><a href="dev.html">Developer</a></li>
+                        <button type="button">Get Started</button>
+                    </ul>
+                </nav>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h4>It’s not about guessing</h4>
+                <h3> it’s about learning from the past.</h3>
+                <p>Data Whispers Secrets!!</p>
+                <button type="button">Get Started</button>
+            </div>
+            <div class="col-2">
+                <img src="images/img.png" class="image">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p><small>Live Market</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+   
+    <script>
+        var list = document.getElementById("list");
+
+        list.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(list.style.maxHeight == "0px"){
+                list.style.maxHeight = "200px";
+            }
+            else{
+                list.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
